@@ -83,6 +83,12 @@
 
     $autossh -M 3442 -R -N 4000:localhost:80 root@119.254.111.196
 
+#### 设置定时任务
+
+每天晚上9点执行更新数据。
+
+    0 21 * * * python /opt/tianshihui/web/cgi/tool/update_app_rank.py
+
 ### 字体库程序
 
 需要安装字体库方案。
@@ -114,7 +120,7 @@
 * 后台目录：http://bigscreen.angelcrunch.com:8080
 
 
-###  AirPay 
+###  AirPay
 
 需要提供单独的路由器，首先要检测路由器的信道是不是处于干扰频段，尽量保证高质量的传输过程中，应当使用单独的信道进行。
 
@@ -124,6 +130,8 @@ Apple TV 播放：
 Android 播放：
 小米采用mirror cast播放功能并不能够很好的支持IOS设备。
 通过小米黑子播放。
+
+
 
 
 
